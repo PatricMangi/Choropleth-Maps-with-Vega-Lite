@@ -17,7 +17,8 @@
         "key": "Country",
         "fields": ["Active"]
       }
-    }
+    },
+    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
@@ -25,7 +26,7 @@
     "color": {
       "field": "Active Cases",
       "type": "quantitative",
-     
+      "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
