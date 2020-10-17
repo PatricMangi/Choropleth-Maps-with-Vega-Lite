@@ -17,8 +17,7 @@
         "key": "Country",
         "fields": ["Active"]
       }
-    },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    }
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
